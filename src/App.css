@@ -6,7 +6,33 @@
   height: 40vmin;
   pointer-events: none;
 }
+.mai{
+  background-color: red;
+  display: inline;
+  position: relative;
+left: 100px;
+}
+.mai::after{
+  /* content: "border"; */
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  /* background-color: orange; */
+  border: 1px solid black;
+ 
+  position: absolute;
 
+}
+.mai::before{
+  content: "_____";
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  background-color: orange;
+left: -40px;
+  position: absolute;
+
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
